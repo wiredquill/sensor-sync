@@ -1,5 +1,9 @@
 #!/bin/bash
 
+git pull https://github.com/wiredquill/sensor-sync.git
+
+node_exporter --collector.textfile.directory /var/lib/node_exporter/textfile &
+
 # This generates a file every 1 minutes
 
 while true; do
@@ -10,6 +14,6 @@ python3 sensehat-prometheus.py
 cp /tmp/sensors.prom /var/lib/node_exporter/textfile/
 
 # Sleep for 60 seconds
-sleep 60
+sleep 30
 
 done
