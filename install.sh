@@ -14,5 +14,4 @@ tar -xvf node_exporter.tar.gz -C /usr/local/bin/ --strip-components=1
 mkdir -p /var/lib/node_exporter/textfile
 chmod 777 /var/lib/node_exporter/textfile 
 
-git clone https://github.com/wiredquill/sensor-sync.git
 
