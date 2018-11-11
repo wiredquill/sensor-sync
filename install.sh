@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo -s
+
 
 echo 'Acquire::http { proxy "http://raspi-cache:3142"; };' > /etc/apt/apt.conf.d/02proxy 
 
@@ -14,4 +14,3 @@ tar -xvf node_exporter.tar.gz -C /usr/local/bin/ --strip-components=1
 mkdir -p /var/lib/node_exporter/textfile
 chmod 777 /var/lib/node_exporter/textfile 
 
-exit
