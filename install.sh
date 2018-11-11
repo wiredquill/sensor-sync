@@ -16,8 +16,8 @@ chmod 777 /var/lib/node_exporter/textfile
 
 cp nodeexporter.service /etc/systemd/system
 
-sudo systemctl daemon-reload \
- && sudo systemctl enable nodeexporter \
- && sudo systemctl start node-exporter
+systemctl daemon-reload 
+systemctl enable nodeexporter 
+systemctl start node-exporter
 
 
