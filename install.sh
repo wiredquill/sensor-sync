@@ -18,6 +18,6 @@ cp nodeexporter.service /etc/systemd/system
 
 systemctl daemon-reload 
 systemctl enable nodeexporter 
-systemctl start node-exporter
+systemctl start nodeexporter
 
 
