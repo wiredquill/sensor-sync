@@ -14,13 +14,13 @@ new_sensors = open(path,'w')
 
 
 print("Temp: %s F" % temp_f)               # Show temp on console
-new_sensors.write("Temp: %s\n" % temp_f)
+new_sensors.write("Temp %s\n" % temp_f)
 
 print("Humidity: %s %%rH" % humidity)        # Show humidity on console
-new_sensors.write("Humidity: %s\n" % humidity)
+new_sensors.write("Humidity %s\n" % humidity)
 
 print("Pressure: %s Millibars" % pressure)    # Show pressure on console
-new_sensors.write("Pressure: %s\n" % pressure)
+new_sensors.write("Pressure %s\n" % pressure)
 
 ap.set_rotation(180)        # Set LED matrix to scroll from right to left
 
