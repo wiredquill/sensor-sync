@@ -2,7 +2,7 @@
 
 git pull https://github.com/wiredquill/sensor-sync.git
 
-node_exporter --collector.textfile.directory /var/lib/node_exporter/textfile &
+#node_exporter --collector.textfile.directory /var/lib/node_exporter/textfile &
 
 # This generates a file every 1 minutes
 
