@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 
-
-echo 'Acquire::http { proxy "http://raspi-cache:3142"; };' > /etc/apt/apt.conf.d/02proxy 
+# echo 'Acquire::http { proxy "http://raspi-cache:3142"; };' > /etc/apt/apt.conf.d/02proxy 
 
 apt-get update
 apt-get upgrade
