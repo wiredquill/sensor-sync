@@ -9,4 +9,4 @@ echo 'deb http://repo.saltstack.com/apt/debian/9/armhf/2018.3/ stretch main' >> 
 apt-get update
 apt-get --assume-yes upgrade
 
-apt-get install salt-minion
+apt-get install salt-minion --assume-yes
