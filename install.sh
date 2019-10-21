@@ -11,7 +11,7 @@ curl -SL https://github.com/prometheus/node_exporter/releases/download/v0.18.1/n
 sudo tar -xvf node_exporter.tar.gz -C /usr/local/bin/ --strip-components=1
 
 sudo mkdir -p /var/lib/node_exporter/textfile
-chmod 777 /var/lib/node_exporter/textfile 
+sudo chmod 777 /var/lib/node_exporter/textfile 
 
 sudo cp nodeexporter.service /etc/systemd/system
 sudo cp nodeexporter-sensor.service /etc/systemd/system
