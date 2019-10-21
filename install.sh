@@ -33,6 +33,6 @@ sudo systemctl enable --now nodeexporter-sensor.service
 
 echo 
 echo sudo status nodeexporter 
-sudo status nodeexporter 
+sudo systemctl status nodeexporter 
 echo sudo systemctl status nodeexporter-sensor.service
 sudo systemctl status nodeexporter-sensor.service
