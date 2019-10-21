@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git pull https://github.com/wiredquill/sensor-sync.git
+#git pull https://github.com/wiredquill/sensor-sync.git
 
 #node_exporter --collector.textfile.directory /var/lib/node_exporter/textfile &
 
