@@ -5,7 +5,7 @@ After=systemd-user-sessions.service
 After=network-online.target
 
 [Service]
-ExecStart=/usr/local/bin/sensor-sync.sh
+ExecStart=/usr/local/bin/sensor-prometheus-export.sh
 TimeoutSec=30
 Restart=on-failure
 RestartSec=30
