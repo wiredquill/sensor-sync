@@ -8,7 +8,7 @@
 
 while true; do
 # This will read the Sense Hat sensors and wirte them to the LED and a file called /tmp/sensors.prom
-python3 sensehat-prometheus.py
+python3 /usr/local/bin/sensehat-prometheus.py
 
 # Copy the sensor data to node exporter so prometheus can pick it up
 cp /tmp/sensors.prom /var/lib/node_exporter/textfile/
