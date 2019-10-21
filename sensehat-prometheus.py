@@ -13,27 +13,27 @@ path = '/tmp/sensors.prom'
 new_sensors = open(path,'w')
 
 
-print("Temp: %s F" % temp_f)               # Show temp on console
+#print("Temp: %s F" % temp_f)               # Show temp on console
 new_sensors.write("Temp %s\n" % temp_f)
 
-print("Humidity: %s %%rH" % humidity)        # Show humidity on console
+#print("Humidity: %s %%rH" % humidity)        # Show humidity on console
 new_sensors.write("Humidity %s\n" % humidity)
 
-print("Pressure: %s Millibars" % pressure)    # Show pressure on console
+#print("Pressure: %s Millibars" % pressure)    # Show pressure on console
 new_sensors.write("Pressure %s\n" % pressure)
 
-ap.set_rotation(180)        # Set LED matrix to scroll from right to left
+#ap.set_rotation(180)        # Set LED matrix to scroll from right to left
 
-ap.show_message("%.1f C" % temp, scroll_speed=0.10, text_colour=[0, 255, 0])
+#ap.show_message("%.1f C" % temp, scroll_speed=0.10, text_colour=[0, 255, 0])
 
-time.sleep(1)           # Wait 1 second
+#time.sleep(1)           # Wait 1 second
 
-ap.show_message("%.1f %%rH" % humidity, scroll_speed=0.10, text_colour=[255, 0, 0]) 
+#ap.show_message("%.1f %%rH" % humidity, scroll_speed=0.10, text_colour=[255, 0, 0]) 
 
-time.sleep(1)      # Wait 1 second
+#time.sleep(1)      # Wait 1 second
 
-ap.show_message("%.1f Millibars" % humidity, scroll_speed=0.10, text_colour=[0, 0, 255])
+#ap.show_message("%.1f Millibars" % humidity, scroll_speed=0.10, text_colour=[0, 0, 255])
 
-ap.clear()      # Clear LED matrix
+#ap.clear()      # Clear LED matrix
 
 new_sensors.close()
