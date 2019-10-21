@@ -16,6 +16,8 @@ chmod 777 /var/lib/node_exporter/textfile
 sudo cp nodeexporter.service /etc/systemd/system
 sudo cp nodeexporter-sensor.service /etc/systemd/system
 
+
+
 sudo cp sensor-prometheus-export.sh /usr/local/bin
 sudo chmod +x /usr/local/bin/sensor-prometheus-export.sh
 
